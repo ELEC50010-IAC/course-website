@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EIE2 Instruction Architectures</title>
+<style type="text/css"></style>
+<link href="sitestyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<img src="logo.jpg" width="180" height="60" alt="">	
+	<header id="heading1">
+	  <h5>&nbsp;Department of Electrical &amp; Electronic Engineering</h5>
+	  <p>&nbsp;ELEC50010 Instruction Architectures &amp; Compiler (IAC) - &nbsp;Autumn Term 2026</p>
+	  <h5>&nbsp;<a href="mailto:p.cheung@imperial.ac.uk">Professor Peter Y. K. Cheung</a></h5>
+
+	</header>
+<br>&nbsp; <img src="iac_banner.jpg" width="800" height="148" alt=""/>
+<h3>COURSE SCHEDULE &amp; CONTENTS</h3>
+	
+<table width="1024" border="2">
+  <tbody>
+    <tr>
+      <th scope="col" width="100" align="cener">Week starting</th>
+      <th scope="col" width="330" align="cener">Sessions&nbsp;</th>
+      <th scope="col" width="360" align="cener">Resources&nbsp;</th>
+	</tr>
+    <tr>
+      	<td>  <center>
+      	<strong>5 Oct</strong>
+      	</center><br>  
+		</td>
+      	<td><br>
+		<center><strong>Lecture 1 - Introduction to IAC</strong>
+		</center><br> 
+		  	<center><a href="Lecture 1 - Introduction to IAC (slides).pdf"><img src="slides_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href="Lecture 1 - Introduction to IAC (notes).pdf"><img src="notes_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href=""><img src="tape_icon.jpg" width="40" height="35" alt=""></a>&nbsp;&nbsp;
+			</center><br>
+			<center><strong>Lab 0 - Setting up the environment</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://github.com/EIE2-IAC/Lab0-devtools"><img src="github_icon.png" width="40" height="40" alt=""></a>&nbsp;&nbsp;
+			</center><br>
+		<center><strong>Lab Partnership Survey</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+		  	<a href="https://forms.office.com/e/TtBK3asFr4"><img src="survey_icon.png" width="40" height="40" alt=""></a></center><br><br>
+	  </td>
+      	<td>
+			<ul><li><p><strong>Future of RISC-V has no Limits&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=jZ-1i9ZoSZ4"><img src="video_icon.png" width="30" height="30" alt="" align="center"></a></strong></p></li></ul>
+			<ul><li><p><strong>RISC-V: open-hardware revolution&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=hF3sp-q3Zmk"><img src="video_icon.png" width="30" height="30" alt="" align="center"></a></strong></p></li></ul>
+			<ul><li><p><strong>Git &amp; Github in 30 minutes&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=jG4Vs81kMlc&t=16s"><img src="video_icon.png" width="30" height="30" alt="" align="center"></a></strong></p></li></ul>
+			<ul><li><p><strong>Markdown Crash Course&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=HUBNt18RFbo&t=309s"><img src="video_icon.png" width="30" height="30" alt="" align="center"></a></strong></p></li></ul>
+			<ul><li><p><strong>Markdown Cheatsheet&nbsp;&nbsp;<a href="https://www.markdownguide.org/cheat-sheet/"><img src="weblink_icon.png" width="30" height="30" alt="" align="center"></a></strong></p></li></ul>
+			<ul><li><p><strong>Git Cheatsheet&nbsp;&nbsp;<a href="https://education.github.com/git-cheat-sheet-education.pdf"><img src="pdf_icon.png" width="30" height="30" alt="" align="center"></a></strong></p></li></ul>
+			<ul><li><p><strong>Hack your brain with Obsidian&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=DbsAQSIKQXk"><img src="video_icon.png" width="30" height="30" alt="" align="center"></a></strong></p></li></ul>
+			<ul><li><p><strong>Obsidian download page&nbsp;&nbsp;<a href="https://obsidian.md/download"><img src="weblink_icon.png" width="30" height="30" alt="" align="center"></a></strong></p></li></ul>
+   	  </td>
+    </tr>
+<!--	
+
+    <tr>
+      	<td>  <center><strong>13 Oct</strong>
+      	</center><br>  
+		</td>
+      	<td><br>
+		<center><strong>Lecture 2 - Hardware Design with System Verilog</strong>
+		</center><br> 
+		  	<center><a href="Lecture 2 - Digital Design with System Verilog (slides).pdf"><img src="slides_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href="Lecture 2 - Digital Design with System Verilog (notes).pdf"><img src="notes_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href=""><img src="tape_icon.jpg" width="40" height="35" alt=""></a>&nbsp;&nbsp;</center><br>
+		<center><strong>Lecture 3 - Verilator, Testbench and Vbuddy</strong>
+		</center><br> 
+		  	<center><a href="Lecture 3 - Verilator & Testbenches (slides).pdf"><img src="slides_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href="Lecture 3 - Verilator & Testbenches (notes).pdf"><img src="notes_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href=""><img src="tape_icon.jpg" width="40" height="35" alt=""></a>&nbsp;&nbsp;2nd half</center><br>
+			<center><strong>Lab 1 - SystemVerilog &amp; Verilator</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://github.com/EIE2-IAC-Labs/Lab1-Counter"><img src="github_icon.png" width="40" height="40" alt=""></a>&nbsp;&nbsp;
+			</center><br>
+		</td>
+      	<td>
+			<ul><li><p><strong>Verilator Resources&nbsp;&nbsp;<a href="https://www.veripool.org"><img src="weblink_icon.png" width="30" height="30" alt="" align="center"></a></strong></p></li></ul>
+			<ul><li><p><strong>Synthesizable SystemVerilog Cheatsheet&nbsp;&nbsp;<a href="https://www.cl.cam.ac.uk/teaching/1011/ECAD+Arch/files/SystemVerilogCheatSheet.pdf"><img src="pdf_icon.png" width="30" height="30" alt="" align="center"></a></strong></p></li></ul>
+   	  </td>
+    </tr>
+
+    <tr>
+      	<td>  <center><strong>20 Oct</strong>
+      	</center><br>  
+		</td>
+      	<td><br>
+		<center><strong>Lecture 4 - Counters, Shift Registers &amp; Memories</strong>
+		</center><br> 
+		  	<center><a href="Lecture 4 - Memory and LFSR (slides).pdf"><img src="slides_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href="Lecture 4 - Memory and LFSR (notes).pdf"><img src="notes_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href="https://imperial.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=bbbb0fc9-5d79-4c3a-82de-b32f017cba45"><img src="tape_icon.jpg" width="40" height="35" alt=""></a>&nbsp;&nbsp;1st half
+			</center><br>
+		<center><strong>Lecture 5 - Finite State Machines</strong>
+		</center><br> 
+		  	<center><a href="Lecture 5 - FSMs (slides).pdf"><img src="slides_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href="Lecture 5 - FSMs (notes).pdf"><img src="notes_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href="https://imperial.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=bbbb0fc9-5d79-4c3a-82de-b32f017cba45"><img src="tape_icon.jpg" width="40" height="35" alt=""></a>&nbsp;&nbsp;2nd half
+			</center><br>
+
+			<center><strong>Lab 2 - Signal Generator</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://github.com/EIE2-IAC-Labs/Lab2-SigGen"><img src="github_icon.png" width="40" height="40" alt=""></a>&nbsp;&nbsp;
+			</center><br>
+		</td>
+   	  <td><p>&nbsp;</p>
+   	    <p>&nbsp;</p>
+   	  </td>
+    </tr>
+  
+    <tr>
+      	<td>  <center><strong>27 Oct</strong>
+      	</center><br>  
+		</td>
+      	<td><br>
+		<center><strong>Lecture 5 - Finite State Machines</strong>
+		</center><br> 
+		  	<center><a href="Lecture 5 - FSMs (slides).pdf"><img src="slides_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href="Lecture 5 - FSMs (notes).pdf"><img src="notes_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href="https://imperial.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=82f1d483-d7ef-4ddb-8cd6-b32f017cbb4f"><img src="tape_icon.jpg" width="40" height="35" alt=""></a>&nbsp;&nbsp;1st half
+			</center><br>
+			<center><strong>Lecture 6 - RISC-V ISA</strong>
+		</center><br> 
+		  	<center><a href="Lecture 6 - RISC-V Instruction Set Overview (slides).pdf"><img src="slides_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href="Lecture 6 - RISC-V Instruction Set Overview (notes).pdf"><img src="notes_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href="https://imperial.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=82f1d483-d7ef-4ddb-8cd6-b32f017cbb4f"><img src="tape_icon.jpg" width="40" height="35" alt=""></a>&nbsp;&nbsp;2nd half
+			</center><br>
+			<center><strong>Lab 3 - Finite State Machines</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://github.com/EIE2-IAC-Labs/Lab3-FSM"><img src="github_icon.png" width="40" height="40" alt=""></a>&nbsp;&nbsp;
+			</center><br>
+
+		</td>
+   	  <td>
+	<center>    </center>
+   	  </td>
+	</tr>
+
+    <tr>
+      	<td>  <center><strong>3 Nov</strong>
+      	</center><br>  
+		</td>
+      	<td><br>
+		<center><strong>Mid-term Quiz</strong>
+		</center><br> 
+<!---	
+			<center><strong>Sample Quiz Questions</strong>&nbsp;&nbsp;<a href="Sample questions for IAC.pdf"><img src="pdf_icon.png" width="35" height="35" alt=""></a>
+			</center><br>
+			<center><strong>Sample Quiz Questions with answers</strong>&nbsp;&nbsp;<a href="Sample questions for IAC - with answer.pdf"><img src="pdf_icon.png" width="35" height="35" alt=""></a>
+			</center><br>
+
+		</td>
+   	  <td>
+	<center>    </center>
+   	  </td>
+	</tr>
+
+    <tr>
+      	<td>  <center>
+      	<strong>12 Nov</strong>
+      	</center><br>  
+		</td>
+      	<td><br>
+		<center><strong>Lecture 7 - RISC-V Microarchitecture</strong>
+		</center><br> 
+		  	<center><a href="Lecture 7 - Microarchitecture (slides).pdf"><img src="slides_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href="Lecture 7 - Microarchitecture (notes).pdf"><img src="notes_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;  
+			<a href="https://imperial.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=bc2f0d5f-a3ab-41d2-9d4d-b32f017cbc35"><img src="tape_icon.jpg" width="40" height="35" alt=""></a>&nbsp;&nbsp;
+			</center><br>
+	
+			<center><strong>Lab 4 - A Reduced RISC-V CPU</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://github.com/EIE2-IAC-Labs/Lab4-Reduced-RISC-V"><img src="github_icon.png" width="40" height="40" alt=""></a>&nbsp;&nbsp;
+			</center><br>
+		</td>
+   	  <td>
+	  		<ul><li><p><strong>Project Team Allocation&nbsp;&nbsp;&nbsp;<a href="IAC Project Team.pdf"><img src="PDF_icon.png" width="40" height="40" alt="" align="center"></a></strong></p></li></ul>
+   	  </td>
+    </tr>
+	  
+    <tr>
+      	<td>  <center>
+      	<strong>17 Nov</strong>
+      	</center><br>  
+		</td>
+      	<td><br>
+		<center><strong>Lecture 8 - Pipelined Processor</strong>
+		</center><br> 
+		  	<center><a href="Lecture 8 - Pipelined Processor (slides).pdf"><img src="slides_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href="Lecture 8 - Pipelined Processor (notes).pdf"><img src="notes_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;  
+			<a href="https://imperial.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a6322c28-05c6-4cdf-9db0-b32f017cbd39"><img src="tape_icon.jpg" width="40" height="35" alt=""></a>&nbsp;&nbsp; 1st half
+			</center><br>
+		<center><strong>Lecture 9 - Memory Hierachy &amp; Cache</strong>
+		</center><br> 
+		  	<center><a href="Lecture 9 - Cache Memory (slides).pdf"><img src="slides_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href="Lecture 9 - Cache Memory (notes).pdf"><img src="notes_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;  
+			<a href="https://imperial.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a6322c28-05c6-4cdf-9db0-b32f017cbd39"><img src="tape_icon.jpg" width="40" height="35" alt=""></a>&nbsp;&nbsp; 2nd half
+			</center><br>
+		</td>
+   	  <td>
+
+   	  </td>
+    </tr>	
+
+    <tr>
+      	<td>  <center><strong>25 Nov</strong>
+      	</center><br>  
+		</td>
+      	<td><br>
+		<center><strong>Lecture 10 - Virtual Memory</strong>
+		</center><br> 
+		  	<center><a href="Lecture 10 - Virtual Memory (slides).pdf"><img src="slides_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href="Lecture 10 - Virtual Memory (notes).pdf"><img src="notes_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href="https://imperial.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6a4afbe2-e88c-459e-8c17-b32f017cbe60"><img src="tape_icon.jpg" width="40" height="35" alt=""></a>&nbsp;&nbsp; 1st half<br> <br>
+		  </center><br>
+			
+		<center><strong>Lecture 11 - Additional Topics</strong></center><br> 
+		  	<center><a href="Lecture 11 - Additonal Topics (slides).pdf"><img src="slides_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href="Lecture 11 - Additonal Topics (notes).pdf"><img src="notes_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href="https://imperial.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6a4afbe2-e88c-459e-8c17-b32f017cbe60"><img src="tape_icon.jpg" width="40" height="35" alt=""></a>&nbsp;&nbsp; 2nd half<br>
+		  </center><br>
+	
+		  <center><strong>Project Brief</strong>&nbsp;&nbsp;&nbsp;&nbsp; <br><br>
+			<a href="Team Project Brief.pdf"><img src="slides_icon.jpg" width="35" height="35" alt=""></a>&nbsp;&nbsp;
+			<a href="https://github.com/EIE2-IAC-Labs/Project_Brief"><img src="github_icon.png" width="40" height="40" alt=""></a>&nbsp;&nbsp;
+			</center><br>
+		</td>
+   	  <td>
+	  		<ul><li><p><strong>Sample Team statement&nbsp;&nbsp;&nbsp;<a href="README.pdf"><img src="PDF_icon.png" width="40" height="40" alt="" align="center"></a></strong></p></li></ul>
+	  		<ul><li><p><strong>Sample Individual statement&nbsp;&nbsp;&nbsp;<a href="hrishi.pdf"><img src="PDF_icon.png" width="40" height="40" alt="" align="center"></a></strong></p></li></ul>
+   	  </td>
+    </tr>  
+
+	  <tr>
+      	<td>  <center><strong>12 Dec</strong>
+      	</center><br>  
+		</td>
+      	<td><br>
+		<center><strong>Team Project Deadline at 23.59.</strong>
+		</center><br> 
+
+		</td>
+   	  <td>
+    	<div align="center"><br>
+      	<p><font face="Arial, Helvetica, sans-serif">Module Evaluation Survey&nbsp;&nbsp;<a href="https://forms.cloud.microsoft/e/QSLag9GKLz"><img src="survey_icon.png" width="35" height="35" alt=""></a>&nbsp;&nbsp;</font></p><br>
+    	</div>
+   	  </td>
+	</tr>
+-->	  
+</tbody>
+</table>
+
+<h3>RISC-V RESOURCES</h3>
+<table width="1024" border="2">
+  <tbody>
+    <tr>
+      <th scope="col" width="330" align="center">DESCRIPTION</th>
+      <th scope="col" width="330" align="center">Useful links and documents</th>
+	</tr>
+    <tr>
+      	<td> <strong>RISC-V architectures</strong><br> </td>
+      	<td>
+			<ul><li><p><strong>RISC-V Instruction Set Manual v2.2&nbsp;&nbsp;<a href="riscv-spec-v2.2.pdf"><img src="pdf_icon.png" width="30" height="30" alt="" align="center"></a></strong></p></li></ul>
+			<ul><li><p><strong>RISC-V official site&nbsp;&nbsp;<a href="https://riscv.org"><img src="weblink_icon.png" width="30" height="30" alt="" align="center"></a></strong></p></li></ul>
+			<ul><li><p><strong>RISC-V wiki page&nbsp;&nbsp;<a href="https://en.wikipedia.org/wiki/RISC-V"><img src="weblink_icon.png" width="30" height="30" alt="" align="center"></a></strong></p></li></ul>
+		</td>
+   	  <td>
+
+   	  </td>
+    </tr>
+
+  </tbody>
+</table>
+ <br>
+<hr>
+<font size="-1" face="Arial, Helvetica, sans-serif"><i>This page is maintained by Peter Cheung</i> 
+<br>
+<i>Last updated: 14 Sep 2026</i></font>
+</body>
+</html>
